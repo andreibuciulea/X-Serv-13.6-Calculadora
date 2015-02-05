@@ -2,21 +2,21 @@
 # -*- coding: utf-8 -*-
 import sys
 if len(sys.argv) != 4:
-	print
-	print "Argumentos inv·lidos"
+    print
+    print "Argumentos inv√°lidos"
 else:
-	try:
-		if sys.argv[1] == '+':
-        		Resultado = float(sys.argv[2]) + float(sys.argv[3])
-       	 	elif sys.argv[1] == '-':
-        		Resultado = float(sys.argv[2]) - float(sys.argv[3])
-      		elif sys.argv[1] == 'mul':
-      		  	Resultado = float(sys.argv[2]) * float(sys.argv[3])
-       		elif sys.argv[1] == '/':
-        		Resultado = float(sys.argv[2]) / float(sys.argv[3])
-       		print "El resultado es:",Resultado
+    try:
+        if sys.argv[1] == '+':
+            Resultado = float(sys.argv[2]) + float(sys.argv[3])
+        elif sys.argv[1] == '-':
+            Resultado = float(sys.argv[2]) - float(sys.argv[3])
+        elif sys.argv[1] == 'mul':
+            Resultado = float(sys.argv[2]) * float(sys.argv[3])
+        elif sys.argv[1] == '/':
+            Resultado = float(sys.argv[2]) / float(sys.argv[3])
+        print "El resultado es:", Resultado
 
-	except NameError:
-		print "Solo hago sumas,restas multi y divisiones"
-	except ZeroDivisionError:
-		print "Cuidado!! DivisiÛn por cero!"
+    except NameError:
+        print "Solo hago sumas,restas multi y divisiones"
+    except ZeroDivisionError:
+        print "Cuidado!! Divisi√≥n por cero!"
